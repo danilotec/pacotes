@@ -1,0 +1,10 @@
+key.txt
+
+venv
+
+dist
+
+simple_orm_sqlite.egg-info
+
+test.py
+setup.py
