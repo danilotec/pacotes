@@ -100,3 +100,7 @@ orm.delete_all(User)       # Delete all records for the class
 ## License
 
 This project is released under the MIT License.
+
+## how to contribute?
+
+[create a PR on github:](https://github.com/danilotec/pacotes)
