@@ -25,7 +25,14 @@ class User:
     name: str
     age: int
 ```
-
+    or 
+```python
+@dataclass
+class User:
+    id: int = field(init=False)
+    name: str
+    age: int
+```
 2. Create a `SimpleORM` instance with the SQLite database filename:
 
 ```python
@@ -47,6 +54,11 @@ user.age = 25
 orm.insert(user)
 print(user.id)  # Auto-generated ID
 ```
+    if usage dataclasses
+```python
+user = User(name='Alice', age=25)
+# ID is auto-generated
+```
 
 5. Query all records:
 
@@ -63,7 +75,12 @@ user = orm.get_one(User, 1)
 if user:
     print(user.name, user.age)
 ```
-
+if you used dataclasses, make only
+```python
+if user:
+    print(user)
+```
+because dataclasses add __repr__ 
 7. Delete records:
 
 ```python
