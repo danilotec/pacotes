@@ -75,7 +75,7 @@ user = orm.get_one(User, 1)
 if user:
     print(user.name, user.age)
 ```
-if you used dataclasses, make only
+#### if you used dataclasses, make only
 ```python
 if user:
     print(user)
