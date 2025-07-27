@@ -103,4 +103,4 @@ This project is released under the MIT License.
 
 ## how to contribute?
 
-[create a PR on github:](https://github.com/danilotec/pacotes)
+[create a PR on github](https://github.com/danilotec/pacotes)
