@@ -38,7 +38,7 @@ class SimpleORM:
         rows = self.cursor.fetchall()
         results = []
         for row in rows:
-            obj = cls()
+            obj = object.__new__(cls)
             for i, key in enumerate(cls.__annotations__):
                 setattr(obj, key, row[i])
             results.append(obj)
@@ -51,7 +51,7 @@ class SimpleORM:
         row = self.cursor.fetchone()
         if row is None:
             return None
-        obj = cls()
+        obj = object.__new__(cls)
         for i, key in enumerate(cls.__annotations__):
             setattr(obj, key, row[i])
         return obj
