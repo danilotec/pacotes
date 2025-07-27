@@ -36,6 +36,8 @@ class User:
 2. Create a `SimpleORM` instance with the SQLite database filename:
 
 ```python
+from simple_orm import SimpleORM
+
 orm = SimpleORM("mydatabase.db")
 ```
 
