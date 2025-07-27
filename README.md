@@ -25,7 +25,7 @@ class User:
     name: str
     age: int
 ```
-    or 
+#### or 
 ```python
 @dataclass
 class User:
@@ -54,7 +54,7 @@ user.age = 25
 orm.insert(user)
 print(user.id)  # Auto-generated ID
 ```
-    if usage dataclasses
+#### if usage dataclasses
 ```python
 user = User(name='Alice', age=25)
 # ID is auto-generated
